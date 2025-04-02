@@ -9,11 +9,6 @@ class UsersController extends Controller
 {
     public function show() 
     {
-        $query = User::ofLastYear();
-        echo '取得去年的所有使用者的 SQL 語法：' . 
-		     vsprintf(str_replace('?', '%s', $query->toSql()), collect($query->getBindings())->map(function ($binding) {
-                 $binding = addslashes($binding);
-                 return is_numeric($binding) ? $binding : "'{$binding}'";
-             })->toArray());
+        echo __('Get the SQL query of all users in the past year:') . User::ofLastYear()->toRawSql(). PHP_EOL;
     }
 }
