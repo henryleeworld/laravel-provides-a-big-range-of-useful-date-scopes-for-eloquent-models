@@ -1,4 +1,4 @@
-# Laravel 11 提供 Eloquent 模型大範圍實用日期區間
+# Laravel 12 提供 Eloquent 模型大範圍實用日期區間
 
 引入 laracraft-tech 的 laravel-date-scopes 套件來擴增提供 Eloquent 模型大範圍實用日期區間，此套件的預設採用是互斥作法，這意味著當您查詢最近 7 天時，它將不包括今天。
 
@@ -26,5 +26,5 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/FJAN83N.png)
+![](https://i.imgur.com/Tmgp1JN.png)
 > 顯示查詢 SQL 語法
